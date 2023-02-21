@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Google from '../img/google.png'
 const Login = () => {
   return (
     <div className='container'>
@@ -13,6 +13,7 @@ const Login = () => {
                 <button>Sign In</button>
             </form>
             <p className='footer'>You don't have an Account? Register</p>
+            <button className='google'> <img src={Google}/> Sign In with Google</button>
         </div>
       
     </div>
