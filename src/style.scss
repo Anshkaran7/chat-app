@@ -23,7 +23,50 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 200px;
   font-family: "Poppins", sans-serif;
+  @include tablet {
+    width: 100%;
+  }
+
+  .svg{
+    height: 300px;
+    width:300px;
+    
+    @include mobile {
+      position: absolute;
+      top: 100%;
+      width: 180px;
+      height: 180px;
+      
+    }
+    @include tablet {
+     position:relative;
+     left: 25%;
+     width: 250px;
+     height: 250px;
+      
+    }
+  }
+  .svg1{
+    height: 330px;
+    width:330px;
+    
+    @include mobile {
+      position: absolute;
+      top: 1%;
+      width: 170px;
+      height: 170px;
+      
+    }
+    @include tablet {
+      position:relative;
+      left: 25%;
+      width: 270px;
+      height: 270px;
+       
+     }
+  }
 
   .wrapper {
     display: flex;
@@ -36,9 +79,11 @@
     box-shadow: 0 0 5px rgb(0, 0, 0.6);
     @include tablet {
       transform: scale(0.8);
+      margin-right: 20%;
     }
     @include mobile {
       transform: scale(0.7);
+      margin-top: 70px;
     }
 
     .logo {
@@ -120,9 +165,14 @@
       padding-left: 15px;
       color: rgb(175, 175, 175);
       padding-right: 15px;
-      font-weight: bold;
+      // font-weight: bold;
       border: none;
       cursor: pointer;
+
+
+      .g-img{
+padding-right: 7px;
+      }
 
       &:hover {
         border: 1px solid rgb(0, 98, 255);
